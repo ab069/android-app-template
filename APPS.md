@@ -10,6 +10,7 @@ Master tracker for all apps built. Check this before starting a new app to avoid
 |---|----------|------|----------|---------------|------------|------|
 | 1 | Unit Converter | [app-unit-converter](https://github.com/ab069/app-unit-converter) | Utility | ConverterCard, Converter.kt, BottomNav tabs | Pending | 2026-05-09 |
 | 2 | Tip Calculator | [app-tip-calculator](https://github.com/ab069/app-tip-calculator) | Utility | TipViewModel, TipUiState, ResultCard | Pending | 2026-05-09 |
+| 3 | QR Code Generator | [app-qrcodegenerator](https://github.com/ab069/app-qrcodegenerator) | Utility | QrViewModel, QrUiState, QrCodeDisplay | Pending | 2026-05-09 |
 
 ---
 
@@ -23,6 +24,8 @@ Components extracted from previous apps that can be copied into new apps.
 | Converter logic | `converter/Converter.kt` | app-unit-converter | Pure Kotlin conversion math with formatting |
 | TipViewModel pattern | `TipViewModel.kt` | app-tip-calculator | UiState data class with computed props + StateFlow ViewModel pattern |
 | ResultCard | `ui/screens/TipScreen.kt` | app-tip-calculator | Highlighted result row card. Copy for any summary/result display |
+| QrCodeDisplay | `ui/screens/HomeScreen.kt` | app-qrcodegenerator | White-background Surface + Image composable for displaying a QR Bitmap |
+| QrViewModel pattern | `QrViewModel.kt` | app-qrcodegenerator | Background bitmap generation with Job cancellation + isGenerating flag in UiState |
 
 ---
 
@@ -32,7 +35,7 @@ Priority-ordered list of apps to build next. Cross off as done.
 
 ### Utility
 - [x] Tip Calculator with bill split
-- [ ] QR Code Generator
+- [x] QR Code Generator
 - [ ] Countdown Timer to any date
 - [ ] Password Generator
 - [ ] Flashlight + SOS mode
